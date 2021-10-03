@@ -131,59 +131,226 @@ ClassRoom2:
 Check if the number is positive or a negative number
 
 
-ITERATIVE Statement:
+ITERATIVE/Looping Statement:
+----------------------------
+
+when do I use?
+
+for , while, do-while
 
 
+Start Time: 2
+End Time: 4
+Take a break
 
 
+Start Time: 2
+End Time  :  
+End criteria:
+Take a break only when you complete the assignments
+*************************************************************
 
 
+Class:
+------
+
+Class : Blueprint for the object. 
+        IT is from this the objects are created/replicated
+
+Object: An entity that has both state and behavior.
+        It is an instance of the class
+
+Phone: 
+------
+
+1. variables:
+
+   properties/ State of an object 
+   Look and feel / attributes
+   data or informations
+
+2. method:
+
+Actions by object/ Behaviour
+
+  makeCalls()
+  postMsg()
+  takePics()
+  playgames()
+  watchVideos()
+  payBills()
 
 
+Object : Has State/Behaviour
+
+Class : Blueprint for an Object
+
+**********************************
+
+Day2 : 03-10-2021
+----------------
+
+variables / properties:
+----------------------
+Instance variables:
+Local variables:
+
+methods/actions:
+----------------
+Getting the values from the method
+	
+ Passing the value to the method
+  
 
 
+  Access specifiers:
+Who can access this ? or The extent upto which it can be accessed
+To set access levels for classes, variables, methods, and constructors
+
+// method signature
+// AccessModifier returnType methodName (arguments){ method body}
+	// public : accessed by all the classes in a project
+	// private : Only that class can use it. cannot be accessed by anyothers
+	// protected : same as package but when inherited
+	// package/default : accessed in the package level
+
+ClassRoom:
+==========
+- Create package name as week1.day2
+- Create a  new class as "MyMobile" under week1.day2
+- create variables for the class
+- Create 2 public methods (makeCall() , sendMsg()) with simple print statement
+- Create a private method payBills() with simple print statement
+
+- Create main method
+- Create object for Mobile class and call the methods and variables using the object
+- Execute the class and get the result in console
 
 
+- Create a new class as MyKid in week1.day2 package
+- Create an object for the previous class "MyMobile"
+- Try to access all the 3 methods of class "MyMobile"
+- Observe the access level of all the methods.( See if all the methods are called)
 
+   
+ARRAY:
+------
+-  class
+ - Arrays are used to store multiple values in a single variable
+ - Collection of similar type of elements which has contiguous memory location- 
+ - We can store only a fixed number of elements in a Java array.
+ - It doesn't grow its size at runtime.
+ - Non primitive dATA TYPE
+
+Array Initialisation:
+int value = 10;
+
+int[] numberSeq1 = { 12, 221, 10, 133, 14, 105, 16 };
+
+
+// using new operator
+		int[] array = new int[7];
+                array[0]=45;
+		array[1]=45;
+		array[2]=45;
+		array[3]=45;
+		array[4]=45;
+		array[5]=45;
+		array[6]=45;
+# Syntax:
+  dataType[] <variableName> = value
+
+# How do I Access the each Element of an Array?
+  -- By referring the index number
+
+  Array indexes start with 0: [0] --> refers the first element
+
+# To find the number of elements in an array
+        Length of the array: array.length;
+        length is a property
+
+# Finding the first and the last elements: 
+
+# How to access multiple elements at a time from array?
+  - for
+  - for each
  
+# sorting the array:
+  Arrays.sort()
+
+# Exception :java.lang.ArrayIndexOutOfBoundsException
+
+Classroom:
+----------
+int arr[] = {100,49,398,34,1,267};
+1. Find the second largest number:
+2. Find the second smallest number:
+
+3. TwoSumProblem:
+int nums[]= {2, 11, 15, 7, 3,5,4 };
+target = 9;
+
+******************************************************************
+STRINGS:
+=======
+class
+A String in Java is actually an object
+It contain methods that can perform certain operations on strings
+
+1. String Length:
+
+2. Find a character in a String:
+
+3. Get the position of a character in the string:
+
+4. Get the last position of a character in the string:
+
+5. Convert a string to a character array:
+
+6. Convert a string to words:
+
+7. Get a part of the string:
+
+8. Replace a character:
+
+9. Replace all the integers, non integers:
+    String str1 = "TestLeaf102839";
+   str.replaceAll("[\\D]", ""); - Replace all the non integers by null(all except numbers)
+   str.replaceAll("[\\d]", ""); - Replace all the integers by null
+
+10. Compare two strings:
+
+    ==       : compares the memory location of the strings
+
+    equals() : compares the contents of the strings 
+
+9. toLowerCase
+
+10.toUpperCase 
+
+                            String test = "changeme"
+                            change the odd index to uppercase
+
+1. String initialization
+2. convert to character array
+3. for() acces from index 0 till the end
+    {
+      if( index is odd)
+              covert to upercase
+    }
 
 
+I   - 0
+am  - 1
+a   - 2
+software -3
+tester  -4
 
-
-
-What can I do with it?
-
-
-Data:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+for(i=0;...)
+{
+    if(index is even){
+       reverse}
+}
 
 
  
