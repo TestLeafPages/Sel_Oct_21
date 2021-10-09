@@ -1,0 +1,32 @@
+Selenium Basics Recap:
+----------------------
+- How to setup the driver using WebDriverManager
+	WebDriverManager.chromedriver().setup()
+- How to open Chrome Browser using ChromeDriver
+	ChromeDriver driver = new ChromeDriver();
+- get("url") to load the url
+- findElement -> to locate single element
+    By.locator
+	id
+	name
+	linkText
+	partialLinkText
+	tagName
+	className
+	xpath
+	cssSelector
+	
+- To interact with the WebElement
+		sendKeys() -> to type value in text field
+		click() -> to click button / link
+- close() -> to close the browser
+
+- driver.manage().window().maximize();
+- driver.manage().window().minimize();
+
+
+
+
+
+		
+

@@ -1,0 +1,12 @@
+DOM -> Document Object Model -> <html> - root tag
+
+ShortCut to open Developer Tools:
+----------------------------------
+F12
+ctrnl+shift+I
+
+DOM -> To get the information about WebElements
+tag name -> mandatory information for WebElement
+attributes -> brown color -> to extra information
+attribute value -> blue color 
+text -> black color
