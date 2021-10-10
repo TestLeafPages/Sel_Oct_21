@@ -1,0 +1,23 @@
+Basic Xpath
+------------
+1. Attribute based xpath
+
+	//tagName[@attributeName='attributeValue']
+	//label[@for='username']
+	//input[@type='password']
+	
+2. Text Based Xpath
+	//tagName[text()='text value']
+	//h2[text()='Leaftaps Login']
+	
+3. Xpath with partial match
+	//tagName[contains(text(),'partial text')]
+	//h2[contains(text(),'Leaftaps')]
+	
+	//tagName[contains(@attribute,'partial attribute value')]
+	//input[contains(@id,'user')]
+	
+4. Collection Based xpath - If it is with 5 matched
+	(xpath)[index]
+	
+	(//input[@class='inputLogin'])[2]

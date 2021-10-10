@@ -1,0 +1,56 @@
+Advanced Xpath: When we are not able to locate the element using basic locators and basic xpath
+=========================
+1. Parent to Child
+--------------------
+- write xpath for known element - Parent
+  parent xpath/tagName of the child
+  //form[@id='login']/p
+  
+2. Child to Parent
+-------------------
+- Write xpath for the known element - Child
+  child Xpath/parent::tagName of Parent
+  //input[@id='password']/parent::p
+	//input[@id='password']/..
+	//label[@for='username']/..
+	
+3. GrandParent to GrandChild
+-----------------------------
+- Write xpath for the known element - GrandParent
+
+GrandParent xpath//tagName GrandChild
+
+//form[@id='login']//label[2]
+
+
+4. GrandChild to GrandParent
+-----------------------------
+- Write xpath for the known element - GrandChild
+GrandChild xpath/ancestor::tagName of GrandParent
+//label[@for='username']/ancestor::form
+
+//label[@for='username']/../..
+
+5. Elder Sibling to Younger Sibling
+------------------------------------
+Elder sibling xpath/following-sibling::tagName younger sibling
+
+//label[@for='username']/following-sibling::input
+
+6. Younger Sibling to Elder Sibling
+---------------------------------
+Younger sibling xpath/preceding-sibling::tagName elder sibling
+
+//input[@id='username']/preceding-sibling::label
+
+7. Elder Cousin to younger cousin
+---------------------------------
+Write xpath for Elder cousin/following::tagName of the younger cousin
+
+//label[text()='Username']/following::label
+
+8. Younger Cousin to Elder cousin
+---------------------------------
+Write xpath for younger cousin/preceding::tagName of the elder cousin
+
+//label[text()='Password']/preceding::label
