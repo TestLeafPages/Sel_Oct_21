@@ -1,4 +1,4 @@
-package week2.day1;
+package week2.day2;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Point;
@@ -7,10 +7,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.opera.OperaDriver;
+import org.openqa.selenium.support.ui.Select;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class CreateLead {
+public class LearnDropDown {
 
 	public static void main(String[] args) throws InterruptedException {
 
@@ -48,7 +49,39 @@ public class CreateLead {
 		driver.findElement(By.id("createLeadForm_firstName")).sendKeys("Hari");
 		driver.findElement(By.id("createLeadForm_lastName")).sendKeys("R");
 		
-		driver.findElement(By.name("submitButton")).click();
+		//Source drop down
+		
+		//step1: locate the select tag
+		WebElement eleSource = driver.findElement(By.id("createLeadForm_dataSourceId"));
+		//eleSource.sendKeys("Conference");
+		
+		//step2: Create object for Select
+		Select dropDown = new Select(eleSource);
+		
+		//step3: Select the value using visible text
+		//dropDown.selectByVisibleText("Conference");
+		
+		//Select the value using Index
+		dropDown.selectByIndex(4);
+		
+		//select by value
+		//dropDown.selectByValue("LEAD_PARTNER");
+		
+		
+		//marketing campaign drop down
+		WebElement eleMarkCamp = driver.findElement(By.id("createLeadForm_marketingCampaignId"));
+		Select dropDown1 = new Select(eleMarkCamp);
+		dropDown1.selectByVisibleText("Automobile");
+		
+		
+		//Industry drop down
+		WebElement eleIndustry = driver.findElement(By.id("createLeadForm_industryEnumId"));
+		Select dropDown2 = new Select(eleIndustry);
+		dropDown2.selectByValue("IND_HARDWARE");
+				
+		
+		
+		//driver.findElement(By.name("submitButton")).click();
 		
 		
 
