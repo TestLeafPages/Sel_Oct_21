@@ -1,0 +1,7 @@
+<suite name="LeafTaps">
+	<test name="Leads">
+		<classes>
+			<class name="testcase.CreateLead" />
+		</classes>
+	</test>
+</suite>
