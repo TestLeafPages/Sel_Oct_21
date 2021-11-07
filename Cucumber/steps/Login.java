@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 import io.cucumber.java.en.But;
 import io.cucumber.java.en.Given;
@@ -42,13 +43,7 @@ public class Login extends BaseClass {
 	@Then("Title should be matching with {string}")
 	public void verifyHomePage(String expTitle) {
 		String actTitle = driver.getTitle();
-		if(actTitle.equals(expTitle)) {
-			System.out.println("homepage is displayed");
-		}else {
-			System.out.println("homepage is not displayed");
-		}
-		
-
+		Assert.assertEquals(expTitle, actTitle);
 	}
 	
 	@But("Error message should be displayed")
