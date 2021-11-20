@@ -1,0 +1,31 @@
+Types of exceptions
+There are two types of exceptions in Java:
+1)Checked exceptions
+2)Unchecked exceptions
+
+Checked Exceptions:
+==========================
+IOException
+FileNotFoundException
+ParseException
+SQLException
+ClassNotFoundException
+CloneNotSupportedException
+InstantiationException
+InterruptedException
+NoSuchMethodException
+NoSuchFieldException
+
+Unchecked Exceptions:
+==========================
+ArithmeticException
+ArrayIndexOutOfBoundsException
+ClassCastException
+IllegalArgumentException
+IllegalStateException
+NullPointerException
+NumberFormatException
+AssertionError
+ExceptionInInitializerError
+StackOverflowError
+NoClassDefFoundError
