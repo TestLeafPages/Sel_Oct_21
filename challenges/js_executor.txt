@@ -1,0 +1,14 @@
+
+driver.executeScript("document.getElementById('some id').value='someValue';");
+
+driver.executeScript("document.getElementById('enter your element id').click();");
+//or
+driver.executeScript("arguments[0].click();", loginButton);
+
+Scroll using Java Script:
+
+driver.executeScript("window.scrollBy(0,1000)");
+
+driver.executeScript("arguments[0].scrollIntoView();", Element);
+
+driver.executeScript("window.scrollTo(0, document.body.scrollHeight)");
